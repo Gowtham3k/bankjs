@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# MyBank - Banking Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description and motivation
 
-## Available Scripts
+MyBank is a simple front-end banking application built as a learning project. It helps users explore common banking flows in one place: creating an account, depositing money, withdrawing money, and viewing account details. The project was built to practice React components, state, and page navigation while modeling basic account and balance management.
 
-In the project directory, you can run:
+This is a demonstration app only. It does not connect to a bank or store data on a server. Account data is kept in React state and is lost when the page is refreshed.
 
-### `npm start`
+Do not enter real passwords or sensitive financial information. This demo is not secure, and the All Data page displays account details.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation and setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You need [Node.js](https://nodejs.org/) and npm installed.
 
-### `npm test`
+1. Clone the repository (replace the placeholder with your repository URL):
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone <repository-url>
+   ```
 
-### `npm run build`
+2. Change into the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd banking-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project already has a `package.json`, so you do not need to run `npm init`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshot
 
-## Learn More
+MyBank home page:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![MyBank home page showing the navigation, welcome message, and Start Banking button](./mybank-home.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technology used
 
-### Code Splitting
+- JavaScript
+- React 19.2
+- React Router 7.13
+- Bootstrap 5.3
+- Create React App (`react-scripts` 5.0.1)
+- HTML and CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Features
 
-### Analyzing the Bundle Size
+- Home page with a link to start creating an account
+- Create an account with a name, email, and password
+- New accounts start with a balance of ₹1,000
+- Deposit money into a selected account
+- Withdraw money, with a check against insufficient balance
+- View account details and current balances
+- Client-side navigation between pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Planned improvements
 
-### Making a Progressive Web App
+- Persist account and transaction data with a backend and database
+- Add secure authentication and authorization
+- Validate account details and transaction amounts more thoroughly
+- Add transaction history and account-specific summaries
+- Improve accessibility and add responsive UI tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No license is specified in `package.json`, and this project does not currently include a `LICENSE` file. Therefore, no open-source license is declared. Choose and add a license before distributing or reusing the project.
