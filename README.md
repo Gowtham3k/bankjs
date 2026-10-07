@@ -1,4 +1,4 @@
-# MyBank - Banking Application
+# MyBank (bankjs) - Banking Application
 
 ## Description and motivation
 
